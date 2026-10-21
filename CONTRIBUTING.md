@@ -19,6 +19,8 @@ reported the issue. Please try to include as much information as you can. Detail
 * Any modifications you've made relevant to the bug
 * Anything unusual about your environment or deployment
 
+Never include cardholder data, PINs, AWS credentials, private keys, or account-specific resource identifiers in an issue.
+
 
 ## Contributing via Pull Requests
 Contributions via pull requests are much appreciated. Before sending us a pull request, please ensure that:
@@ -31,7 +33,7 @@ To send us a pull request, please:
 
 1. Fork the repository.
 2. Modify the source; please focus on the specific change you are contributing. If you also reformat all the code, it will be hard for us to focus on your change.
-3. Ensure local tests pass.
+3. Ensure local tests pass (`go test ./...` in `backend/`, `flutter analyze && flutter test` in `frontend/`). If you change Go dependencies, run `go mod tidy` in `backend/` and commit `go.mod` and `go.sum`.
 4. Commit to your fork using clear commit messages.
 5. Send us a pull request, answering any default questions in the pull request interface.
 6. Pay attention to any automated CI failures reported in the pull request, and stay involved in the conversation.

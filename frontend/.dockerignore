@@ -1,0 +1,14 @@
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.git/
+.gitignore
+.idea/
+.metadata
+.packages
+.vscode/
+build/
+coverage/
+*.iml
+.DS_Store
+

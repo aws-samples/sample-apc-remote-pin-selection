@@ -1,0 +1,61 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.bak
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Go workspace and build state
+/build
+go.work
+go.work.sum
+
+# Go build, test, and profiling output
+**/bin/
+**/build/
+*.test
+coverage*.out
+*.prof
+
+# Flutter and Dart generated output
+frontend/.dart_tool/
+frontend/build/
+frontend/coverage/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+
+# Local service data and reports
+.local-data/
+**/.local/
+test-results/
+*.log
+
+# Terraform state and local settings. The provider lock file
+# (.terraform.lock.hcl) is committed so everyone gets the same provider build.
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+crash.log
+crash.*.log
+
+# Packaged archives and local agent settings
+*.zip
+.claude/settings.local.json

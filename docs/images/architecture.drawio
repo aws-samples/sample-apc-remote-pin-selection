@@ -1,0 +1,146 @@
+<mxfile host="65bd71144e">
+    <diagram name="Remote PIN Selection" id="page-1">
+        <mxGraphModel dx="1103" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="vpc" value="VPC" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#000000;container=1;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#8C4FFF;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;" parent="1" vertex="1">
+                    <mxGeometry x="422.67928571428575" y="394.05499999999995" width="337.32" height="184.55" as="geometry">
+                        <mxRectangle x="422.67928571428575" y="394.05499999999995" width="90" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="backend" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#000000;fontFamily=Arial;fontSize=11;fillColor=#ED7100;strokeColor=#ffffff;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" parent="vpc" vertex="1">
+                    <mxGeometry x="130.43040000000002" y="57.150967741935496" width="76.4592" height="76.4592" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font style=&quot;font-size: 11px;&quot; face=&quot;Arial&quot;&gt;Issuer Backend&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="vpc">
+                    <mxGeometry x="197.32071428571425" y="125.94500000000005" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="awsCloud" value="AWS Cloud" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#000000;container=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="150" width="540" height="612.18" as="geometry"/>
+                </mxCell>
+                <mxCell id="region" value="Region" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#000000;container=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;strokeColor=#00A4A6;dashed=1;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="188.6" width="470" height="561.4" as="geometry"/>
+                </mxCell>
+                <mxCell id="title" value="Remote PIN selection for mobile and web apps" style="text;html=1;fontFamily=Arial;fontSize=20;fontStyle=1;fontColor=#000000;align=left;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="24" width="760" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="desc" value="This architecture shows how a mobile or web application creates an encrypted PIN block, uses AWS Private CA to establish trust in an ephemeral client key, and uses AWS Payment Cryptography to translate the block into the processor&#39;s key domain without sending the clear PIN to the issuer backend." style="text;html=1;fontFamily=Arial;fontSize=11;fontColor=#000000;align=left;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="58" width="1000" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="rule" value="" style="line;strokeWidth=1;fontFamily=Arial;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="112" width="1400" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="cardholder" value="Cardholder" style="sketch=0;outlineConnect=0;fontColor=#000000;fontFamily=Arial;fontSize=11;fillColor=#232F3E;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws4.user;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="466" width="50" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="app" value="Mobile or web&#xa;application" style="sketch=0;outlineConnect=0;fontColor=#000000;fontFamily=Arial;fontSize=11;fillColor=#232F3E;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws4.client;" parent="1" vertex="1">
+                    <mxGeometry x="192" y="466" width="60" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1" value="1" style="ellipse;fillColor=#232F3E;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontFamily=Arial;fontSize=13;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="168" y="433" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2" value="2" style="ellipse;fillColor=#232F3E;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontFamily=Arial;fontSize=13;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="526" y="433" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3" value="3" style="ellipse;fillColor=#232F3E;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontFamily=Arial;fontSize=13;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="517" y="207" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4" value="4" style="ellipse;fillColor=#232F3E;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontFamily=Arial;fontSize=13;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="541" y="627.73" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="bank" value="Banking system or&#xa;card processor&#xa;(external)" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=11;fontColor=#000000;fillColor=#F2F3F3;strokeColor=#7D8998;dashed=1;dashPattern=6 6;verticalAlign=middle;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="449.44" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="c5" value="5" style="ellipse;fillColor=#232F3E;strokeColor=none;fontColor=#ffffff;fontStyle=1;fontFamily=Arial;fontSize=13;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="886" y="418" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="Enter PIN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;startArrow=none;strokeWidth=1.25;strokeColor=#000000;fontFamily=Arial;fontSize=9;fontColor=#000000;html=1;" parent="1" source="cardholder" target="app" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="Authenticated request, CSR,&#xa;encrypted PIN envelope" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;startArrow=none;strokeWidth=1.25;strokeColor=#000000;fontFamily=Arial;fontSize=9;fontColor=#000000;html=1;exitX=1;exitY=0.35;exitDx=0;exitDy=0;" parent="1" source="app" target="backend" edge="1">
+                    <mxGeometry x="-0.3844" relative="1" as="geometry">
+                        <mxPoint x="550" y="480" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="251" y="480"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e8" value="Certificates and result" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;startArrow=none;strokeWidth=1.25;strokeColor=#000000;fontFamily=Arial;fontSize=9;fontColor=#000000;html=1;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;" parent="1" source="backend" target="app" edge="1">
+                    <mxGeometry x="0.2215" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e7" value="PEK-encrypted&#xa;PIN block" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;startArrow=none;strokeWidth=1.25;strokeColor=#000000;fontFamily=Arial;fontSize=9;fontColor=#000000;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="backend" target="bank" edge="1">
+                    <mxGeometry x="0.2155" y="-1" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="820" y="490"/>
+                            <mxPoint x="820" y="490"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="footer" value="AWS Reference Architecture" style="text;html=1;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#ED7100;align=left;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="604" width="200" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="pca" value="AWS Private CA" style="sketch=0;outlineConnect=0;fontColor=#000000;fontFamily=Arial;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=image;image=data:image/svg+xml,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvNjQvQXJjaF9BV1MtUHJpdmF0ZS1DZXJ0aWZpY2F0ZS1BdXRob3JpdHlfNjQ8L3RpdGxlPgogICAgPGcgaWQ9Ikljb24tQXJjaGl0ZWN0dXJlLzY0L0FyY2hfQVdTLVByaXZhdGUtQ2VydGlmaWNhdGUtQXV0aG9yaXR5XzY0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbi1BcmNoaXRlY3R1cmUtQkcvNjQvU2VjdXJpdHktSWRlbnRpdHktQ29tcGxpYW5jZSIgZmlsbD0iI0REMzQ0QyI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIHg9IjAiIHk9IjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgICAgICA8cGF0aCBkPSJNNjcsMTcgTDY0LDE3IEw2NCwxOSBMNjYsMTkgTDY2LDY2IEw2MSw2NiBMNjEsNjggTDY3LDY4IEM2Ny41NTMsNjggNjgsNjcuNTUyIDY4LDY3IEw2OCwxOCBDNjgsMTcuNDQ4IDY3LjU1MywxNyA2NywxNyBMNjcsMTcgWiBNMTksNjQgTDE3LDY0IEwxNyw2NyBDMTcsNjcuNTUyIDE3LjQ0Nyw2OCAxOCw2OCBMNTMsNjggTDUzLDY2IEwxOSw2NiBMMTksNjQgWiBNMzUuNSw0MCBDMzUuNzU2LDQwIDM2LjAxMiwzOS45MDIgMzYuMjA3LDM5LjcwNyBMNDQuMjA3LDMxLjcwNyBMNDIuNzkzLDMwLjI5MyBMMzUuNSwzNy41ODYgTDMyLjIwNywzNC4yOTMgTDMwLjc5MywzNS43MDcgTDM0Ljc5MywzOS43MDcgQzM0Ljk4OCwzOS45MDIgMzUuMjQ0LDQwIDM1LjUsNDAgTDM1LjUsNDAgWiBNMjYsMzQuNSBDMjYsNDAuODQxIDMxLjE1OSw0NiAzNy41LDQ2IEM0My44NDEsNDYgNDksNDAuODQxIDQ5LDM0LjUgQzQ5LDI4LjE1OSA0My44NDEsMjMgMzcuNSwyMyBDMzEuMTU5LDIzIDI2LDI4LjE1OSAyNiwzNC41IEwyNiwzNC41IFogTTI0LDM0LjUgQzI0LDI3LjA1NiAzMC4wNTYsMjEgMzcuNSwyMSBDNDQuOTQ0LDIxIDUxLDI3LjA1NiA1MSwzNC41IEM1MSw0MS45NDQgNDQuOTQ0LDQ4IDM3LjUsNDggQzMwLjA1Niw0OCAyNCw0MS45NDQgMjQsMzQuNSBMMjQsMzQuNSBaIE0xNCwxNyBMNjAsMTcgTDYwLDE0IEwxNCwxNCBMMTQsMTcgWiBNNjAsNjAgTDYwLDE5IEwxNCwxOSBMMTQsNjAgTDQ4LDYwIEw0OCw2MiBMMTMsNjIgQzEyLjQ0Nyw2MiAxMiw2MS41NTIgMTIsNjEgTDEyLDEzIEMxMiwxMi40NDggMTIuNDQ3LDEyIDEzLDEyIEw2MSwxMiBDNjEuNTUzLDEyIDYyLDEyLjQ0OCA2MiwxMyBMNjIsNjEgQzYyLDYxLjU1MiA2MS41NTMsNjIgNjEsNjIgTDU2LDYyIEw1Niw2MCBMNjAsNjAgWiBNMjcsNTcgTDI3LDQ4IEwyOSw0OCBMMjksNTUuNDczIEwzNy4xMDEsNTEuOTQgQzM3LjM1NCw1MS44MjkgMzcuNjQ2LDUxLjgyOSAzNy44OTksNTEuOTQgTDQ2LDU1LjQ3MyBMNDYsNDggTDQ4LDQ4IEw0OCw1NyBDNDgsNTcuMzM3IDQ3LjgzLDU3LjY1MiA0Ny41NDgsNTcuODM2IEM0Ny4zODMsNTcuOTQ1IDQ3LjE5MSw1OCA0Nyw1OCBDNDYuODY0LDU4IDQ2LjcyOSw1Ny45NzMgNDYuNjAxLDU3LjkxNyBMMzcuNSw1My45NDggTDI4LjM5OSw1Ny45MTcgQzI4LjA5MSw1OC4wNTIgMjcuNzM0LDU4LjAyMiAyNy40NTIsNTcuODM2IEMyNy4xNyw1Ny42NTIgMjcsNTcuMzM3IDI3LDU3IEwyNyw1NyBaIiBpZD0iRmlsbC04IiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==;" parent="1" vertex="1">
+                    <mxGeometry x="553.1142857142858" y="221.72571428571428" width="82.17857142857143" height="82.17857142857143" as="geometry"/>
+                </mxCell>
+                <mxCell id="apc" value="AWS Payment&#xa;Cryptography" style="sketch=0;outlineConnect=0;fontColor=#000000;fontFamily=Arial;fontSize=11;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=image;image=data:image/svg+xml,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvNjQvQXJjaF9BV1MtUGF5bWVudC1DcnlwdG9ncmFwaHlfNjQ8L3RpdGxlPgogICAgPGcgaWQ9Ikljb24tQXJjaGl0ZWN0dXJlLzY0L0FyY2hfQVdTLVBheW1lbnQtQ3J5cHRvZ3JhcGh5XzY0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbi1BcmNoaXRlY3R1cmUtQkcvNjQvU2VjdXJpdHktSWRlbnRpdHktQ29tcGxpYW5jZSIgZmlsbD0iI0REMzQ0QyI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIHg9IjAiIHk9IjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0iSWNvbi1TZXJ2aWNlLzY0L0FXUy1QYXltZW50LUNyeXB0b2dyYXBoeV82NCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIuMDAwMDAwLCAxMS43NTAwMDApIiBmaWxsPSIjRkZGRkZGIj4KICAgICAgICAgICAgPHBhdGggZD0iTTMyLjUxNSw4LjY1OTQzMDc5IEMzMi40OTIsOC42NTk0MzA3OSAzMi40NjgsOC42NTk0MzA3OSAzMi40NDQsOC42NjA0MzA3OSBDMzIuMDI0LDguNjc5NDMwNzkgMzEuNjM1LDguODYwNDMwNzkgMzEuMzUxLDkuMTcxNDMwNzkgQzMxLjA2Nyw5LjQ4MTQzMDc5IDMwLjkyLDkuODg0NDMwNzkgMzAuOTM5LDEwLjMwNDQzMDggQzMwLjk1NywxMC43MjU0MzA4IDMxLjEzOSwxMS4xMTM0MzA4IDMxLjQ1LDExLjM5NzQzMDggQzMyLjA4OSwxMS45ODM0MzA4IDMzLjA4OCwxMS45NDE0MzA4IDMzLjY3NiwxMS4yOTk0MzA4IEMzNC4yNjIsMTAuNjU4NDMwOCAzNC4yMTgsOS42NTk0MzA3OSAzMy41NzcsOS4wNzM0MzA3OSBMMzMuNTc3LDkuMDczNDMwNzkgQzMzLjI4NSw4LjgwNTQzMDc5IDMyLjkxLDguNjU5NDMwNzkgMzIuNTE1LDguNjU5NDMwNzkgTDMyLjUxNSw4LjY1OTQzMDc5IFogTTMyLjUxMiwxMy44MDk0MzA4IEMzMS42NDksMTMuODA5NDMwOCAzMC43ODQsMTMuNDk5NDMwOCAzMC4wOTksMTIuODcyNDMwOCBDMjkuMzk0LDEyLjIyNzQzMDggMjguOTgzLDExLjM0NzQzMDggMjguOTQxLDEwLjM5MjQzMDggQzI4Ljg5OSw5LjQzODQzMDc5IDI5LjIzMSw4LjUyNTQzMDc5IDI5Ljg3Niw3LjgyMDQzMDc5IEMzMC41MjEsNy4xMTY0MzA3OSAzMS40MDIsNi43MDQ0MzA3OSAzMi4zNTYsNi42NjI0MzA3OSBDMzMuMzA2LDYuNjE1NDMwNzkgMzQuMjIzLDYuOTUyNDMwNzkgMzQuOTI3LDcuNTk3NDMwNzkgQzM2LjM4Miw4LjkyODQzMDc5IDM2LjQ4MywxMS4xOTU0MzA4IDM1LjE1MiwxMi42NDk0MzA4IEMzNC40NDcsMTMuNDE5NDMwOCAzMy40ODEsMTMuODA5NDMwOCAzMi41MTIsMTMuODA5NDMwOCBMMzIuNTEyLDEzLjgwOTQzMDggWiBNNTAuNjk0LDMxLjAxMjQzMDggTDU0LDMxLjIxMDQzMDggTDU0LDI3LjcxNDQzMDggTDQwLjExNywxNS4wNjA0MzA4IEMzOS43ODksMTQuNzYxNDMwOCAzOS42OTgsMTQuMjgzNDMwOCAzOS44OTEsMTMuODg0NDMwOCBDNDEuNDc3LDEwLjYxOTQzMDggNDAuNzEyLDYuNjI1NDMwNzkgMzguMDMyLDQuMTcwNDMwNzkgQzM2LjIyMSwyLjUxMzQzMDc5IDMzLjc4NSwxLjc1MDQzMDc5IDMxLjM1LDIuMDcyNDMwNzkgQzI4LjkxNSwyLjM5NjQzMDc5IDI2Ljc1MSwzLjc5MzQzMDc5IDI1LjQxMSw1LjkwNzQzMDc5IEMyMy41ODYsOC43ODU0MzA3OSAyMy43ODksMTIuNjY4NDMwOCAyNS45MDcsMTUuMzQ4NDMwOCBDMjguMjM2LDE4LjI5ODQzMDggMzIuMTE5LDE5LjMzNzQzMDggMzUuNTY3LDE3LjkzNzQzMDggQzM1LjkyMSwxNy43OTE0MzA4IDM2LjMzMiwxNy44NjQ0MzA4IDM2LjYxOCwxOC4xMjU0MzA4IEwzOS4yMywyMC41MTc0MzA4IEMzOS40MjYsMjAuNjk2NDMwOCAzOS41NDIsMjAuOTQ2NDMwOCAzOS41NTQsMjEuMjExNDMwOCBMMzkuNjc1LDIzLjk1NTQzMDggTDQyLjQxOSwyMy44MzQ0MzA4IEM0Mi42ODQsMjMuODI4NDMwOCA0Mi45NDMsMjMuOTE3NDMwOCA0My4xMzgsMjQuMDk1NDMwOCBMNDUuMDkyLDI1Ljg4NDQzMDggQzQ1LjI4OCwyNi4wNjM0MzA4IDQ1LjQwNSwyNi4zMTM0MzA4IDQ1LjQxNiwyNi41Nzg0MzA4IEw0NS41MzcsMjkuMzIyNDMwOCBMNDguMjgyLDI5LjIwMTQzMDggQzQ4LjU0NiwyOS4xOTg0MzA4IDQ4LjgwNSwyOS4yODQ0MzA4IDQ5LDI5LjQ2MjQzMDggTDUwLjY5NCwzMS4wMTI0MzA4IFogTTU1LDMzLjI3MjQzMDggQzU0Ljk4MSwzMy4yNzI0MzA4IDU0Ljk2LDMzLjI3MjQzMDggNTQuOTQxLDMzLjI3MDQzMDggTDUwLjIyLDMyLjk4NzQzMDggQzQ5Ljk5MSwzMi45NzM0MzA4IDQ5Ljc3NCwzMi44ODI0MzA4IDQ5LjYwNSwzMi43Mjc0MzA4IEw0Ny45NTUsMzEuMjE3NDMwOCBMNDQuNjI2LDMxLjM2NDQzMDggQzQ0LjA5OSwzMS4zODk0MzA4IDQzLjYwOCwzMC45NjE0MzA4IDQzLjU4MywzMC40MDk0MzA4IEw0My40MzcsMjcuMDgwNDMwOCBMNDIuMDkzLDI1Ljg1MDQzMDggTDM4Ljc2NCwyNS45OTc0MzA4IEMzOC4yMywyNi4wMTI0MzA4IDM3Ljc0NSwyNS41OTM0MzA4IDM3LjcyMSwyNS4wNDI0MzA4IEwzNy41NzUsMjEuNzEzNDMwOCBMMzUuNzE4LDIwLjAxMzQzMDggQzMxLjU5NiwyMS40MDQ0MzA4IDI3LjA4OCwyMC4wNzM0MzA4IDI0LjMzNiwxNi41ODc0MzA4IEMyMS42NjEsMTMuMTk5NDMwOCAyMS40MTMsOC40NzY0MzA3OSAyMy43MjIsNC44MzU0MzA3OSBDMjUuMzc5LDIuMjIyNDMwNzkgMjguMDY0LDAuNDkyNDMwNzg3IDMxLjA4NiwwLjA4OTQzMDc4NzIgQzM0LjEwNywtMC4zMDk1NjkyMTMgMzcuMTM0LDAuNjM4NDMwNzg3IDM5LjM4MiwyLjY5NTQzMDc5IEM0Mi41MjQsNS41NzE0MzA3OSA0My41NDUsMTAuMTUxNDMwOCA0MS45OTQsMTQuMDY1NDMwOCBMNTUuNjc0LDI2LjUzMzQzMDggQzU1Ljg4MiwyNi43MjI0MzA4IDU2LDI2Ljk5MTQzMDggNTYsMjcuMjcyNDMwOCBMNTYsMzIuMjcyNDMwOCBDNTYsMzIuNTQ4NDMwOCA1NS44ODcsMzIuODExNDMwOCA1NS42ODYsMzMuMDAwNDMwOCBDNTUuNSwzMy4xNzY0MzA4IDU1LjI1NCwzMy4yNzI0MzA4IDU1LDMzLjI3MjQzMDggTDU1LDMzLjI3MjQzMDggWiBNOSwzOC4yNzI0MzA4IEwxNiwzOC4yNzI0MzA4IEwxNiwzNC4yNzI0MzA4IEw5LDM0LjI3MjQzMDggTDksMzguMjcyNDMwOCBaIE0xNyw0MC4yNzI0MzA4IEw4LDQwLjI3MjQzMDggQzcuNDQ4LDQwLjI3MjQzMDggNywzOS44MjU0MzA4IDcsMzkuMjcyNDMwOCBMNywzMy4yNzI0MzA4IEM3LDMyLjcyMDQzMDggNy40NDgsMzIuMjcyNDMwOCA4LDMyLjI3MjQzMDggTDE3LDMyLjI3MjQzMDggQzE3LjU1MywzMi4yNzI0MzA4IDE4LDMyLjcyMDQzMDggMTgsMzMuMjcyNDMwOCBMMTgsMzkuMjcyNDMwOCBDMTgsMzkuODI1NDMwOCAxNy41NTMsNDAuMjcyNDMwOCAxNyw0MC4yNzI0MzA4IEwxNyw0MC4yNzI0MzA4IFogTTcsNDguMjcyNDMwOCBMMTQsNDguMjcyNDMwOCBMMTQsNDYuMjcyNDMwOCBMNyw0Ni4yNzI0MzA4IEw3LDQ4LjI3MjQzMDggWiBNMTcsNDguMjcyNDMwOCBMMjQsNDguMjcyNDMwOCBMMjQsNDYuMjcyNDMwOCBMMTcsNDYuMjcyNDMwOCBMMTcsNDguMjcyNDMwOCBaIE0yNyw0OC4yNzI0MzA4IEwzNCw0OC4yNzI0MzA4IEwzNCw0Ni4yNzI0MzA4IEwyNyw0Ni4yNzI0MzA4IEwyNyw0OC4yNzI0MzA4IFogTTM3LDQ4LjI3MjQzMDggTDQ0LDQ4LjI3MjQzMDggTDQ0LDQ2LjI3MjQzMDggTDM3LDQ2LjI3MjQzMDggTDM3LDQ4LjI3MjQzMDggWiBNNDUuOTA2LDU1LjI3MjQzMDggTDYuMDk1LDU1LjI3MjQzMDggQzIuNzM1LDU1LjI3MjQzMDggMCw1Mi41Mzg0MzA4IDAsNDkuMTc4NDMwOCBMMCwyNy4zNjc0MzA4IEMwLDI0LjAwNjQzMDggMi43MzUsMjEuMjcyNDMwOCA2LjA5NSwyMS4yNzI0MzA4IEwyNCwyMS4yNzI0MzA4IEwyNCwyMy4yNzI0MzA4IEw2LjA5NSwyMy4yNzI0MzA4IEMzLjgzNywyMy4yNzI0MzA4IDIsMjUuMTA5NDMwOCAyLDI3LjM2NzQzMDggTDIsNDkuMTc4NDMwOCBDMiw1MS40MzU0MzA4IDMuODM3LDUzLjI3MjQzMDggNi4wOTUsNTMuMjcyNDMwOCBMNDUuOTA2LDUzLjI3MjQzMDggQzQ4LjE2Myw1My4yNzI0MzA4IDUwLDUxLjQzNTQzMDggNTAsNDkuMTc4NDMwOCBMNTAsMzYuMjcyNDMwOCBMNTIsMzYuMjcyNDMwOCBMNTIsNDkuMTc4NDMwOCBDNTIsNTIuNTM4NDMwOCA0OS4yNjYsNTUuMjcyNDMwOCA0NS45MDYsNTUuMjcyNDMwOCBMNDUuOTA2LDU1LjI3MjQzMDggWiIgaWQ9IkZpbGwtMSI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+;" parent="1" vertex="1">
+                    <mxGeometry x="553.11" y="651.73" width="73.41" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" value="Agreement cert /&#xa;translated PIN block" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;startArrow=none;strokeWidth=1.25;strokeColor=#000000;fontFamily=Arial;fontSize=9;fontColor=#000000;html=1;entryX=0.65;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="apc" target="backend" edge="1">
+                    <mxGeometry x="-0.01" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="653.9992857142857" y="681.605"/>
+                            <mxPoint x="653.9992857142857" y="611.605"/>
+                            <mxPoint x="602.9992857142857" y="611.605"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e5" value="GetPublicKeyCertificate /&#xa;TranslatePinData" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;startArrow=none;strokeWidth=1.25;strokeColor=#000000;fontFamily=Arial;fontSize=9;fontColor=#000000;html=1;exitX=0.35;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="backend" target="apc" edge="1">
+                    <mxGeometry x="0.185" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="579.9992857142857" y="611.605"/>
+                            <mxPoint x="533.9992857142857" y="611.605"/>
+                            <mxPoint x="533.9992857142857" y="681.605"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e3" value="IssueCertificate /&#xa;GetCertificate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;startArrow=none;strokeWidth=1.25;strokeColor=#000000;fontFamily=Arial;fontSize=9;fontColor=#000000;html=1;exitX=0.35;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="backend" target="pca" edge="1">
+                    <mxGeometry x="0.1588" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e4" value="Short-lived&#xa;client certificate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;startArrow=none;strokeWidth=1.25;strokeColor=#000000;fontFamily=Arial;fontSize=9;fontColor=#000000;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.65;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pca" target="backend" edge="1">
+                    <mxGeometry x="-0.1788" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="1100" y="150" width="300" height="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="sidebarBg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F3F3;strokeColor=none;" parent="6" vertex="1">
+                    <mxGeometry width="300" height="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="s1" value="&lt;b&gt;1. Mobile or web application&lt;/b&gt;&#xa;Captures the PIN, generates an ephemeral P-256 key pair and CSR, derives a temporary key via ECDH, and builds the encrypted PIN block." style="text;html=1;fontFamily=Arial;fontSize=10;fontColor=#000000;align=left;verticalAlign=top;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="18" y="26" width="266" height="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="s2" value="&lt;b&gt;2. Issuer backend&lt;/b&gt;&#xa;Authenticates and authorizes the operation, coordinates certificate issuance, and submits encrypted material for translation." style="text;html=1;fontFamily=Arial;fontSize=10;fontColor=#000000;align=left;verticalAlign=top;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="18" y="122" width="266" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3" value="&lt;b&gt;3. AWS Private Certificate Authority (AWS Private CA)&lt;/b&gt;&#xa;Issues a short-lived certificate binding the application&#39;s ephemeral public key." style="text;html=1;fontFamily=Arial;fontSize=10;fontColor=#000000;align=left;verticalAlign=top;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="18" y="212" width="266" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="s4" value="&lt;b&gt;4. AWS Payment Cryptography&lt;/b&gt;&#xa;Validates the client certificate, derives the key, and translates the PIN block into the outgoing PEK domain inside its HSM boundary." style="text;html=1;fontFamily=Arial;fontSize=10;fontColor=#000000;align=left;verticalAlign=top;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="18" y="302" width="266" height="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="s5" value="&lt;b&gt;5. Banking system or card processor&lt;/b&gt;&#xa;Completes PIN enrollment and owns PIN policy, verification, retry counting, and lockout." style="text;html=1;fontFamily=Arial;fontSize=10;fontColor=#000000;align=left;verticalAlign=top;whiteSpace=wrap;" parent="6" vertex="1">
+                    <mxGeometry x="18" y="398" width="266" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
